@@ -120,8 +120,6 @@ I'd recommend using Poetry to manage the dependecy installation/ virtual environ
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Edit and expand on the application as needed.
-
 You can debug the application by pressing *F5* in [Visual Studio Code](https://code.visualstudio.com/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
