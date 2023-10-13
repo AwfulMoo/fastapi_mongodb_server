@@ -1,6 +1,6 @@
 from motor.motor_asyncio import AsyncIOMotorClient
-from app.settings import MongoDBConfig
-from app.core.db.mongodb import db
+from fastapi_mongo_server.settings import MongoDBConfig
+from fastapi_mongo_server.core.db.mongodb import db
 
 
 async def connect_to_mongo():

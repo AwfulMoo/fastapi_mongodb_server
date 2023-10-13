@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from app.routers import users, tasks
-from app.core.db import mongodb_utils
+from fastapi_mongo_server.routers import users, tasks
+from fastapi_mongo_server.core.db import mongodb_utils
 
 app = FastAPI(
     title="fastapi_mongo_server",

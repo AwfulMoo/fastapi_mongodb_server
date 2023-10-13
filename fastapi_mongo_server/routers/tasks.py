@@ -2,8 +2,8 @@ from bson import ObjectId
 from typing import List
 from fastapi import APIRouter, Depends
 from motor.motor_asyncio import AsyncIOMotorDatabase
-from app.core.models.task_model import TaskModel
-from app.core.db.mongodb import get_database
+from fastapi_mongo_server.core.models.task_model import TaskModel
+from fastapi_mongo_server.core.db.mongodb import get_database
 
 router = APIRouter(
     prefix="/tasks"

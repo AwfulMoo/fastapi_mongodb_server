@@ -1,5 +1,5 @@
 from motor.motor_asyncio import AsyncIOMotorDatabase, AsyncIOMotorClient
-from app.settings import MongoDBConfig
+from fastapi_mongo_server.settings import MongoDBConfig
 
 
 class DataBase:
