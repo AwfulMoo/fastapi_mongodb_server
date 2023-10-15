@@ -5,12 +5,14 @@ from fastapi_mongo_server.core.db.mongodb import db
 
 async def connect_to_mongo():
     db.client = AsyncIOMotorClient(
+        username=MongoDBConfig.username,
+        password=MongoDBConfig.password,
         host=MongoDBConfig.host,
         port=MongoDBConfig.port,
         connect=True
     )
     print(
-        f"Conencted to {MongoDBConfig.host}:{MongoDBConfig.port}. Database: {MongoDBConfig.db}"
+        f"Conencted to {MongoDBConfig.host}:{MongoDBConfig.port}. Database: {MongoDBConfig.database_name}"
     )
 
 

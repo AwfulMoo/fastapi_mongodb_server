@@ -10,4 +10,4 @@ db = DataBase()
 
 
 async def get_database() -> AsyncIOMotorDatabase:
-    return db.client[MongoDBConfig.db]
+    return db.client[MongoDBConfig.database_name]
